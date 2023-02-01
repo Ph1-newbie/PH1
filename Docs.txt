@@ -1,0 +1,46 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:usch="http://www.unisoftware.ru/schematron-extensions" xmlns:sql="urn:schemas-microsoft-com:mapping-schema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Ôàéë">
+			<xs:sequence>
+				<xs:element name="Äîêóìåíò">
+						<xs:sequence>
+							<xs:element name="ÑâÍÏ">
+									<xs:choice>
+										<xs:element name="ÍÏÞË">
+												<xs:attribute name="ÈÍÍÞË" type="ÈÍÍÞËÒèï" use="required">
+												<xs:attribute name="ÊÏÏ" type="ÊÏÏÒèï" use="required">
+										</xs:element>
+										<xs:element name="ÍÏÈÏ">
+												<xs:attribute name="ÈÍÍÔË" type="ÈÍÍÔËÒèï" use="required">
+										</xs:element>
+									</xs:choice>
+							</xs:element>
+							<xs:element name="Ïîäïèñàíò">
+									<xs:sequence>
+										<xs:element name="ÔÈÎ" type="ÔÈÎÒèï">
+										</xs:element>
+										<xs:element name="ÑâÏðåä" minOccurs="0">
+												<xs:attribute name="ÍàèìÄîê" use="required">
+												<xs:attribute name="ÍàèìÎðã" use="optional">
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="ÏðÏîäï" use="required">
+							</xs:element>
+							<xs:element name="ÓâÈñ÷ÑóìÍàëîã" maxOccurs="unbounded">
+									<xs:attribute name="ÊÏÏÄåêë" type="ÊÏÏÒèï" use="optional">
+									<xs:attribute name="ÎÊÒÌÎ" type="ÎÊÒÌÎÒèï" use="required">
+									<xs:attribute name="ÊÁÊ" type="ÊÁÊÒèï" use="required">
+									<xs:attribute name="ÑóìÍàëîãÀâàíñ" use="required">
+									<xs:attribute name="Ïåðèîä" use="required">
+									<xs:attribute name="ÍîìåðÌåñÊâàðò" use="required">
+									<xs:attribute name="Ãîä" use="required">
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="ÊÍÄ" use="required">
+						<xs:attribute name="ÄàòàÄîê" type="ÄàòàÒèï" use="required">
+						<xs:attribute name="ÊîäÍÎ" type="ÑÎÍÎÒèï" use="required">
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ÈäÔàéë" use="required">
+			<xs:attribute name="ÂåðñÏðîã" use="required">
+			<xs:attribute name="ÂåðñÔîðì" use="required">
+	</xs:element>
